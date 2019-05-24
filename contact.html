@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <form action="" method="post" id="contact-form">
+    <label alt="Email address">E-mail: </label>
+    <input alt="Email address input field" class="standard-label" type="email" required="required" id="contact-email">
+
+    <!-- I want to accept international numbers so there are no restrictions to the phone number format that can be provided for now -->
+    <label alt="Telephone number">Telephone: </label>
+    <input alt="Telephone number input field" class="standard-label" type="tel" required="required" id="contact-tel">
+
+    <label alt="Message">Message: </label>
+    <textarea alt="Message text area" maxlength="240" required="required"></textarea>
+
+    <input alt="Contact form submission button to be pressed after you have entered an email address, phone number and message" class="standard-label" type="submit" value="Send message" id="contact-message">
+  </form>
+
+  <ul>
+    <li data-contact-reason="option">Web development</li>
+    <li data-contact-reason="option">Native App development</li>
+    <li data-contact-reason="option">Unity game development</li>
+    <li data-contact-reason="option">Product Management</li>
+    <li data-contact-reason="option">Other</li>
+  </ul>
+</body>
+</html>
