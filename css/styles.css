@@ -101,7 +101,7 @@ a:hover, a:focus {
 
 /** global variables **/
 :root {
-  --color: #111111;
+  --primary-color: #111111;
   --secondary-color: #e0b354;
   --dark-grey: #2b2b2b;
   --background-color: #EEEEEE;
