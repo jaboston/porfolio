@@ -110,15 +110,18 @@ a:hover, a:focus {
   --button-background-color: #111111;
   --button-text-color: #FFFFFF;
   --secondary-background-color: #DDDDDD;
+  --h1-font-size: 22px;
 
+  --theme-border-radius: 10px;
+  --theme-default-padding: 10px;
 }
 
 .cv_button {
   background-color: var(--button-background-color);
   font-size: 16px;
   color: var(--button-text-color);
-  padding: 10px;
-  border-radius: 10px;
+  padding: var(--theme-default-padding);
+  border-radius: var(--theme-border-radius);
   margin-bottom: 30px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   /* border-bottom: 2px solid rgba(0, 0, 0, 0.3); */
@@ -139,7 +142,7 @@ button {
 }
 
 div, body, head {
-  padding: 10px; /* Adds a 10px inner spacing to all sides*/
+  padding: var(--theme-default-padding); /* Adds a 10px inner spacing to all sides*/
   /* margin: 10px; /* Adds a 10px outer spacing to all sides */
   margin: 0 auto;
   border: 1px solid var(--secondary-background-color); /* Attributes describe: thickness, type, color*/
@@ -223,7 +226,7 @@ h1 {
 .project-grid__item {
   background-color: lightgray;
   line-height: normal;
-  padding: 10px;
+  padding: var(--theme-default-padding);
   /* Set width to auto*/
   width: auto;
 }
@@ -250,7 +253,7 @@ h1 {
     grid-row: auto / auto;
   }
   h1 {
-    font-size: 22px;
+    font-size: var(--h1-font-size);
   }
 }
 
@@ -265,7 +268,7 @@ h1 {
     grid-row: auto / auto;
   }
   h1 {
-    font-size: 22px;
+    font-size: var(--h1-font-size);
   }
 }
 
