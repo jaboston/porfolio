@@ -1,0 +1,434 @@
+/* HTML reset code. Replace by normalize for now
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
+
+/* Styles for the page */
+/*
+Background color: #EEEEEE
+Primary Color: #1111111
+Secondary Color: #357b70;
+
+*/
+
+/** top level elements */
+body {
+  background-color: #EEEEEE;
+  color: #111111;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+a {
+  color: #111111;
+}
+
+a:visited {
+  /* visited link */
+  color: #05676e;
+}
+
+a:active {
+  /* selected link */
+  color: #489c79;
+}
+
+a:hover, a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+
+/** global variables **/
+
+.cv_button {
+  background-color: #111111;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  /* border-bottom: 2px solid rgba(0, 0, 0, 0.3); */
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+button {
+  -webkit-transition: 0.5s, opacity;
+  -o-transition: 0.5s, opacity;
+  transition: 0.5s, opacity;
+}
+
+div {
+  padding: 10px; /* Adds a 10px inner spacing to all sides*/
+  /* margin: 10px; /* Adds a 10px outer spacing to all sides */
+  margin: 0 auto;
+  border: 1px solid #DDDDDD; /* Attributes describe: thickness, type, color*/
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  padding: 10px; /* Adds a 10px inner spacing to all sides*/
+  /* margin: 10px; /* Adds a 10px outer spacing to all sides */
+  margin: 0 auto;
+  border: 1px solid #DDDDDD; /* Attributes describe: thickness, type, color*/
+  width: 100%;
+  text-align: center;
+}
+
+head {
+  padding: 10px; /* Adds a 10px inner spacing to all sides*/
+  /* margin: 10px; /* Adds a 10px outer spacing to all sides */
+  margin: 0 auto;
+  border: 1px solid #DDDDDD; /* Attributes describe: thickness, type, color*/
+  width: 100%;
+  text-align: center;
+}
+
+head {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+h1 {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+.navigation-list{
+  list-style-type: none;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile__graphic--inline {
+  display: inline-block;
+  float: left;
+  margin: 0 auto;
+
+/* using max-width instead of width. For the purpose of the exercise I am putting border-radius 50% but the png source is rounded through a clipping mask in photoshop before */
+  max-width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.topbanner {
+  /* position: relative;
+  top: 20px;
+  left: 20px; */
+  min-width: 200px;
+  max-width: 800px;
+  border-spacing: 20px;
+}
+
+.page-footer {
+  clear: both;
+  width: 100%;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-footer-item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+/* work page css styling */
+
+.project-grid {
+  display: -ms-grid;
+  display: grid;
+  /* creates a column for every '1fr' i specify */
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+/* Grid fallback*/
+
+.project-grid__item {
+  display: inline-block;
+  width: 33%;
+}
+
+/* if grid supported, overwrite fallback*/
+.project-grid__item {
+  background-color: lightgray;
+  line-height: normal;
+  padding: 10px;
+  /* Set width to auto*/
+  width: auto;
+}
+
+/** just testing layouts
+.project-grid__item:first-child {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+**/
+
+/** media styles for responsive page **/
+
+/** 1 column when less than 500px **/
+@media all and (max-width: 500px) {
+  .project-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .project-grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+/** 2 columns when greater than 500 and less than 750 **/
+@media all and (min-width: 501px) and (max-width: 750px){
+  .project-grid {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .project-grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+/** shared code **/
+@media all and (max-width: 750px){
+  /* shared code here */
+}
+
+/** about page **/
+
+/** key frames for the sun **/
+/** colors are not reusable hence I did not bother turning them in to variables for now **/
+@-webkit-keyframes color-change {
+  0% {
+    fill: #edc655;
+    -webkit-transform: scale(0.990,0.990);
+            transform: scale(0.990,0.990);
+  }
+  50% {
+    fill: #fcffad;
+    -webkit-transform: scale(1.01,1.01);
+            transform: scale(1.01,1.01);
+  }
+  100% {
+    fill: #f76414;
+    -webkit-transform: scale(1,1);
+            transform: scale(1,1);
+  }
+}
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+    -webkit-transform: scale(0.990,0.990);
+            transform: scale(0.990,0.990);
+  }
+  50% {
+    fill: #fcffad;
+    -webkit-transform: scale(1.01,1.01);
+            transform: scale(1.01,1.01);
+  }
+  100% {
+    fill: #f76414;
+    -webkit-transform: scale(1,1);
+            transform: scale(1,1);
+  }
+}
+
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(-100px, 50px);
+            transform: translate(-100px, 50px);
+  }
+  to {
+    -webkit-transform: translate(600px, 50px);
+            transform: translate(600px, 50px);
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    -webkit-transform: translate(-100px, 50px);
+            transform: translate(-100px, 50px);
+  }
+  to {
+    -webkit-transform: translate(600px, 50px);
+            transform: translate(600px, 50px);
+  }
+}
+
+@-webkit-keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(700px, 48px);
+            transform: translate(700px, 48px);
+  }
+  to {
+    -webkit-transform: translate(-100px, 48px);
+            transform: translate(-100px, 48px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(700px, 48px);
+            transform: translate(700px, 48px);
+  }
+  to {
+    -webkit-transform: translate(-100px, 48px);
+            transform: translate(-100px, 48px);
+  }
+}
+
+/** the sun **/
+.sun {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: color-change;
+          animation-name: color-change;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  /** i prefer explicit easy to read definitions so for now ill leave this line commented outer
+  animation: 4s color-change infinite alternate linear;
+  **/
+}
+
+/** the clouds **/
+.cloud-front {
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+  -webkit-animation-name: cloud-move;
+          animation-name: cloud-move;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  /** i prefer explicit easy to read definitions so for now ill leave this line commented outer
+  animation: 30s cloud-move infinite alternate linear;
+  **/
+}
+
+.cloud-back {
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
+  -webkit-animation-name: cloud-move-reverse;
+          animation-name: cloud-move-reverse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  /** i prefer explicit easy to read definitions so for now ill leave this line commented outer
+  animation: 34s cloud-move-reverse infinite alternate linear;
+  **/
+}
