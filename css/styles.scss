@@ -165,6 +165,10 @@ h1 {
   text-decoration: none;
 }
 
+.list__no-bullet-points {
+  list-style-type: none;
+}
+
 .navigation-list{
   list-style-type: none;
 }
@@ -229,6 +233,14 @@ h1 {
   padding: var(--theme-default-padding);
   /* Set width to auto*/
   width: auto;
+}
+
+.standard-label {
+  align-self: flex-start;
+}
+
+.standard-input {
+  align-self:flex-end;
 }
 
 /** just testing layouts
